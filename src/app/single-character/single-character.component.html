@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="d-flex heading">
+        <h1>{{characterDetails.name}}</h1>
+    </div>
+    <div class="d-flex flex-column body">
+            <div class="d-flex left-Column">
+                <img src={{characterDetails.image}}>
+            </div>
+            <div class="d-flex right-column">
+                <h2>{{characterDetails.name}}</h2>
+                <h3>{{characterDetails.status}} {{characterDetails.species}}</h3>
+                <p class="heading-text-1">Last Known location:</p>
+                <span>
+                    {{characterDetails.location.name}}
+                </span>
+                <p class="heading-text-2">First seen in:</p>
+                <span>
+                    {{characterDetails.origin.name}}
+                </span>
+            </div>
+    </div>
+</div>

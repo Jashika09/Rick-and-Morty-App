@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="d-flex heading">
+        <h1>Character List</h1>
+    </div>
+    <div class="d-flex flex-column body" *ngFor="let character of characterList| paginate: { itemsPerPage: itemsPerpage, currentPage: currPage, totalItems:totalItems}; let in=index">
+            <div class="d-flex left-Column">
+                <img src={{character.image}} (click)="getSingleCharacter(in+1)">
+            </div>
+            <div class="d-flex right-column">
+                <h2>{{character.name}}</h2>
+                <h3>{{character.status}} {{character.species}}</h3>
+                <p class="heading-text-1">Last Known location:</p>
+                <span>
+                    {{character.location.name}}
+                </span>
+                <p class="heading-text-2">First seen in:</p>
+                <span>
+                    {{character.origin.name}}
+                </span>
+            </div>
+    </div>
+    <div class="d-flex" style="width:100%;">
+        <div class="d-flex" style="float: right;margin-top: 15px;">
+            <pagination-controls (pageChange)="pageChange($event)" class="my-pagination"></pagination-controls>
+        </div>
+    </div>
+   
+</div>

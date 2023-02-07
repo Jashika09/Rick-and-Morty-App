@@ -9,7 +9,7 @@ Steps to run project:-
 5) If you want to get single character data then click on the image which is at left side.
 
 
-I was having short span of timw which is 2 hours so I tried my best to complete as much as I can so:-
+I was having short span of time which is 2 hours so I tried my best to complete as much as I can so:-
 Given Below api's which i have done:-
  
 1) https://rickandmortyapi.com/api - getting all api's
